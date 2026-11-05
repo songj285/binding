@@ -1,0 +1,16 @@
+:root{
+	--type-sm: 1rem;
+	--type-md: calc(var(--type-sm)*2);
+	--type-lg: calc(var(--type-sm)*3);
+
+	--color-bg: papayawhip;
+
+	--space-md: 2rem;
+	--space-md: 4rem;
+}
+
+body{
+	font-family:'Courier New', Courier, monospace;
+	color: aqua;
+	background-color: antiquewhite;
+}
