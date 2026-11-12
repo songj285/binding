@@ -3,19 +3,19 @@
 	--base-type: 1rem;
 
 	--font-body:'Syne', 'Archivo', sans-serif;
-	--font-title: 'Syne', 'Archivo', sans-serif;
+	--font-title: 'Playfair display', 'Baskerville', serif;
 
 	--font-sm: 1rem;
 	--font-md: calc(var(--font-sm)*2);
 	--font-lg: calc(var(--font-sm)*3);
 
-	--color-bg: black;
-	--color-font: white;
-	--color-point: #00E676;
-	--color-link: blue;
+	--color-bg: #F6F3EB;
+	--color-font: #1E1C1A;
+	--color-point: #D92B2B;
 
 	--space-sm: 1rem;
 	--space-md: calc(var(--space-sm)*2);
+	--space-lg: calc(var(--space-sm)*3);
 
 	/*base color&font*/
 	background-color: var(--color-bg);
@@ -39,17 +39,23 @@ h2{
 }
 
 p{
-	margin-block: var(--space-md);
+	margin-block: var(--space-lg);
 	margin-inline: var(--space-sm);
+	line-height: var(--space-lg);
 }
 
 blockquote{
+	font-family: var(--font-title);
 	font-style: capitalize;
 	font-size: var(--font-lg);
+	font-weight: 600;
+	line-height: 4.5rem;
 	border-inline-start: solid;
 	border-color: var(--color-point);
 	border-width: 0.5rem;
 	margin-inline-start: var(--space-sm);
+	padding-inline-start: var(--space-sm);
+	padding-block: var(--space-md);
 }
 
 .time{

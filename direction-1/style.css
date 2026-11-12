@@ -17,6 +17,7 @@
 
 	--space-sm: 1rem;
 	--space-md: calc(var(--space-sm)*2);
+	--space-lg: calc(var(--space-sm)*3);
 
 	/*base color&font*/
 	background-color: var(--color-bg);
@@ -44,14 +45,14 @@ h2{
 
 h3{
 	font-weight: 600;
-	font-size: var(--font-md);
-	margin-block-start: var(--size-lg);
-	margin-block-end: var(--size-md);
-	border-block-end: calc(var(--size-sm) / 10) solid var(--color-font);
+	font-size: 2.5rem;
+	margin-inline-start: var(--space-md);
+	color: var(--color-point);
 }
 
 p{
 	margin: var(--space-md);
+	line-height: var(--space-lg);
 }
 
 blockquote{

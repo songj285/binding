@@ -1,16 +1,48 @@
+/*base styles*/
 :root{
-	--type-sm: 1rem;
-	--type-md: calc(var(--type-sm)*2);
-	--type-lg: calc(var(--type-sm)*3);
+	--base-type: 1rem;
 
-	--color-bg: papayawhip;
+	--font-body:'Newsreader', 'Garamond', serif;
+	--font-title: 'Syne', 'Space Grotesk', sans-serif;
 
-	--space-md: 2rem;
-	--space-md: 4rem;
+	--font-sm: 1rem;
+	--font-md: calc(var(--font-sm)*2);
+	--font-lg: calc(var(--font-sm)*3);
+
+	--color-bg: black;
+	--color-font: white;
+	--color-point: #2B59FF;
+
+	--space-sm: 1rem;
+	--space-md: calc(var(--space-sm)*2);
+	--space-lg: calc(var(--space-sm)*3);
+
+	/*base color&font*/
+	background-color: var(--color-bg);
+	color: var(--color-font);
+
 }
 
 body{
-	font-family:'Courier New', Courier, monospace;
-	color: black;
-	background-color: antiquewhite;
+	font-family:var(--font-body);
+	color: var(--color-font);
+	font-size: var(--font-md);
+}
+
+h2{
+	text-align: center;
+	font-family:var(--font-title);
+	font-weight:600;
+	font-size: calc(var(--font-sm)*5);
+	color: var(--color-point);
+	border: solid;
+	border-radius: 100%;
+	margin-block: var(--space-md);
+	margin-inline-start: var(--space-sm);
+}
+
+p{
+	margin-block: var(--space-lg);
+	margin-inline: var(--space-sm);
+	line-height: var(--space-lg);
 }
