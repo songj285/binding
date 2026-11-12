@@ -14,7 +14,7 @@
 	--font-lg: calc(var(--type-sm)*3);
 
 	--space-sm: 2rem;
-	--space-md: calc(var(--space-md)*2);
+	--space-md: calc(var(--space-sm)*2);
 
 	/*base color&font*/
 	background-color: var(--color-bg);
@@ -31,6 +31,7 @@ h1{
 	font-family: 'Helvetica', serif;
 	text-align: center;
 	font-size: calc(var(--base-type)*4);
+	margin-block-start: var(--space-sm);
 }
 
 li{
@@ -43,4 +44,11 @@ li{
 	border-radius: 100%;
 	border-color: var(--color-font);
 	padding: var(--space-sm);
+}
+
+.explanation{
+	font-family: 'Helvetica', serif;
+	margin: var(--space-sm);
+	line-height: 1.5rem;
+	opacity: 60%;
 }
