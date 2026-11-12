@@ -2,8 +2,8 @@
 :root{
 	--base-type: 1rem;
 
-	--font-body: 'Courier New', Courier, monospace;
-	--font-title: 'Courier New', Courier, monospace;
+	--font-body: 'Newsreader', serif;
+	--font-title: 'Courier Prime', monospace;
 
 	--font-sm: 1rem;
 	--font-md: calc(var(--font-sm)*2);
@@ -27,8 +27,9 @@
 
 body{
 	font-family:var(--font-title);
-	font-size: var(--font-md);
-	color: var(--color-font)
+	font-size: 2.2rem;
+	font-weight: 50;
+	color: var(--color-font);
 }
 
 h2{
@@ -40,7 +41,7 @@ h2{
 	border-color: var(--color-font);
 	padding-block: var(--space-sm);
 	color: var(--color-font);
-	margin-block: var(--space-md);
+	margin-block-start: var(--space-lg);
 }
 
 h3{
@@ -51,8 +52,9 @@ h3{
 }
 
 p{
-	margin: var(--space-md);
-	line-height: var(--space-lg);
+	margin-inline: var(--space-md);
+	margin-block: var(--space-lg);
+	line-height: calc(var(--space-sm)*4);
 }
 
 blockquote{

@@ -2,8 +2,8 @@
 :root{
 	--base-type: 1rem;
 
-	--font-body:'Newsreader', 'Garamond', serif;
-	--font-title: 'Syne', 'Space Grotesk', sans-serif;
+	--font-body:'Geist', 'Manrope', sans-serif;
+	--font-title: 'Space Grotesk', 'Syne', sans-serif;
 
 	--font-sm: 1rem;
 	--font-md: calc(var(--font-sm)*2);
@@ -26,7 +26,7 @@
 body{
 	font-family:var(--font-body);
 	color: var(--color-font);
-	font-size: var(--font-md);
+	font-size: 2.2rem;
 }
 
 h2{
@@ -45,9 +45,23 @@ h2{
 p{
 	margin-block: var(--space-lg);
 	margin-inline: var(--space-sm);
-	line-height: var(--space-lg);
+	line-height: 4.5rem;
+}
+
+.number{
+	color: var(--color-point);
+	font-size: var(--font-lg);
+	text-align: center;
+	font-weight: 600;
+	font-family: var(--font-title);
 }
 
 .time{
 	text-align: center;
+}
+
+.author{
+	background-color: var(--color-point);
+	padding: var(--space-md);
+	color: var(--color-bg);
 }

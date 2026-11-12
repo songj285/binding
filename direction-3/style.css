@@ -2,8 +2,8 @@
 :root{
 	--base-type: 1rem;
 
-	--font-body:'Syne', 'Archivo', sans-serif;
-	--font-title: 'Playfair display', 'Baskerville', serif;
+	--font-body:'Archivo', sans-serif;
+	--font-title: 'Cardo', 'Playfair Display', serif;
 
 	--font-sm: 1rem;
 	--font-md: calc(var(--font-sm)*2);
@@ -26,13 +26,13 @@
 body{
 	font-family:var(--font-body);
 	color: var(--color-font);
-	font-size: var(--font-md);
+	font-size: 2.5rem;
 }
 
 h2{
 	font-family:var(--font-title);
 	font-weight:600;
-	font-size: calc(var(--font-sm)*5);
+	font-size: calc(var(--font-sm)*7);
 	color: var(--color-point);
 	margin-block: var(--space-md);
 	margin-inline-start: var(--space-sm);
@@ -41,7 +41,7 @@ h2{
 p{
 	margin-block: var(--space-lg);
 	margin-inline: var(--space-sm);
-	line-height: var(--space-lg);
+	line-height: calc(var(--space-sm)*4);
 }
 
 blockquote{
