@@ -2,17 +2,16 @@
 :root{
 	--base-type: 1rem;
 
-	--font-body:sans-serif;
-	--font-title: Inter;
+	--font-body:'Syne', 'Archivo', sans-serif;
+	--font-title: 'Syne', 'Archivo', sans-serif;
 
 	--font-sm: 1rem;
 	--font-md: calc(var(--font-sm)*2);
 	--font-lg: calc(var(--font-sm)*3);
 
-	--color-bg: #EBE9E4;
-	--color-font: #1c1c1c;
-	--color-base: white;
-	--color-point: #ff4D00;
+	--color-bg: black;
+	--color-font: white;
+	--color-point: #00E676;
 	--color-link: blue;
 
 	--space-sm: 1rem;
@@ -25,7 +24,40 @@
 }
 
 body{
-	font-family:'Courier New', Courier, monospace;
-	color: black;
-	background-color: antiquewhite;
+	font-family:var(--font-body);
+	color: var(--color-font);
+	font-size: var(--font-md);
+}
+
+h2{
+	font-family:var(--font-title);
+	font-weight:600;
+	font-size: calc(var(--font-sm)*5);
+	color: var(--color-point);
+	margin-block: var(--space-md);
+	margin-inline-start: var(--space-sm);
+}
+
+p{
+	margin-block: var(--space-md);
+	margin-inline: var(--space-sm);
+}
+
+blockquote{
+	font-style: capitalize;
+	font-size: var(--font-lg);
+	border-inline-start: solid;
+	border-color: var(--color-point);
+	border-width: 0.5rem;
+	margin-inline-start: var(--space-sm);
+}
+
+.time{
+	font-style: italic;
+	opacity: 60%;
+}
+
+#back-home{
+	font-size: var(--font-md);
+	margin-inline-start: var(--space-sm);
 }

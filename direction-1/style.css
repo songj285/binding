@@ -27,7 +27,7 @@
 body{
 	font-family:var(--font-title);
 	font-size: var(--font-md);
-	color: black;
+	color: var(--color-font)
 }
 
 h2{
@@ -82,9 +82,8 @@ blockquote{
 
 #back-home{
 	font-size: var(--font-md);
-	margin-block-start: var(--size-lg);
-	margin-block-end: var(--size-md);
-	border-block-end: calc(var(--size-sm) / 10) solid var(--color-font);
+	margin-block-start: var(--sp);
+	margin-block-end: var(--size-sm);
 	position: sticky;
 	inset-block-start: 0;
 	padding-block: var(--size-md);

@@ -40,6 +40,7 @@ li{
 	margin: var(--space-sm);
 	font-weight: 800;
 	font-size: var(--font-lg);
-	border-block: var(--base-type);
+	border: solid;
 	border-color: var(--color-font);
+	padding: var(--space-sm);
 }
