@@ -11,7 +11,7 @@
 
 	--color-bg: rgb(186, 183, 174);
 	--color-font: #181818;
-	--color-point: #8E8E93;
+	--color-point: rgb(110, 56, 8);
 
 	--space-sm: 1rem;
 	--space-md: calc(var(--space-sm)*2);
@@ -37,12 +37,17 @@ h2{
 	color: var(--color-point);
 	border: solid;
 	border-radius: 100%;
-	margin-block: var(--space-md);
+	margin-block: var(--space-lg);
 	margin-inline-start: var(--space-sm);
+	padding-block: var(--space-lg);
 }
 
 p{
 	margin-block: var(--space-lg);
 	margin-inline: var(--space-sm);
 	line-height: var(--space-lg);
+}
+
+.time{
+	text-align: center;
 }
