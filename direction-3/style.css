@@ -1,12 +1,27 @@
+/*base styles*/
 :root{
-	--type-sm: 1rem;
-	--type-md: calc(var(--type-sm)*2);
-	--type-lg: calc(var(--type-sm)*3);
+	--base-type: 1rem;
 
-	--color-bg: papayawhip;
+	--font-body:sans-serif;
+	--font-title: Inter;
 
-	--space-md: 2rem;
-	--space-md: 4rem;
+	--font-sm: 1rem;
+	--font-md: calc(var(--font-sm)*2);
+	--font-lg: calc(var(--font-sm)*3);
+
+	--color-bg: #EBE9E4;
+	--color-font: #1c1c1c;
+	--color-base: white;
+	--color-point: #ff4D00;
+	--color-link: blue;
+
+	--space-sm: 1rem;
+	--space-md: calc(var(--space-sm)*2);
+
+	/*base color&font*/
+	background-color: var(--color-bg);
+	color: var(--color-font);
+
 }
 
 body{

@@ -8,7 +8,7 @@
 	--color-point: brown;
 
 	--font-body: 'Cardo', serif;
-	--font-bigtitle: 'Geist', sans-serif;
+	--font-bigtitle: 'Helvetica', serif;
 
 	--font-sm: 1rem;
 	--font-md: calc(var(--type-sm)*2);
@@ -29,9 +29,8 @@ body{
 
 h1{
 	font-weight: 600;
+	font-family: 'Helvetica', serif;
 	text-align: center;
-	border-block: 0.7rem double var(--color-point);
-	padding-block: 3rem;
 	font-size: calc(var(--base-type)*4);
 	color: var(--color-point)
 }
@@ -40,8 +39,7 @@ li{
 	text-align: center;
 	margin: var(--space-sm);
 	font-weight: 800;
-	font-size: var(--font-lg)
-
-
-
+	font-size: var(--font-lg);
+	border-block: var(--base-type);
+	border-color: var(--color-font);
 }
