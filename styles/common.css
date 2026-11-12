@@ -5,10 +5,9 @@
 	--color-bg: rgb(210, 203, 191);
 	--color-font: black;
 	--color-base: white;
-	--color-point: brown;
 
 	--font-body: 'Cardo', serif;
-	--font-bigtitle: 'Helvetica', serif;
+	--font-title: 'Helvetica', serif;
 
 	--font-sm: 1rem;
 	--font-md: calc(var(--type-sm)*2);
@@ -32,15 +31,16 @@ h1{
 	font-family: 'Helvetica', serif;
 	text-align: center;
 	font-size: calc(var(--base-type)*4);
-	color: var(--color-point)
 }
 
 li{
 	text-align: center;
 	margin: var(--space-sm);
+	font-family: var(--font-title);
 	font-weight: 800;
 	font-size: var(--font-lg);
 	border: solid;
+	border-radius: 100%;
 	border-color: var(--color-font);
 	padding: var(--space-sm);
 }

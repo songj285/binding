@@ -9,8 +9,8 @@
 	--font-md: calc(var(--font-sm)*2);
 	--font-lg: calc(var(--font-sm)*3);
 
-	--color-bg: black;
-	--color-font: white;
+	--color-bg: rgb(169, 169, 169);
+	--color-font: #181818;
 	--color-point: #2B59FF;
 
 	--space-sm: 1rem;
