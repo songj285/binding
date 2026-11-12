@@ -1,16 +1,101 @@
+/*base styles*/
 :root{
-	--type-sm: 1rem;
-	--type-md: calc(var(--type-sm)*2);
-	--type-lg: calc(var(--type-sm)*3);
+	--base-type: 1rem;
 
-	--color-bg: papayawhip;
+	--font-body:sans-serif;
+	--font-title: Inter;
 
-	--space-md: 2rem;
-	--space-md: 4rem;
+	--font-sm: 1rem;
+	--font-md: calc(var(--font-sm)*2);
+	--font-lg: calc(var(--font-sm)*3);
+
+	--color-bg: #EBE9E4;
+	--color-font: #1c1c1c;
+	--color-base: white;
+	--color-point: #ff4D00;
+	--color-link: blue;
+
+	--space-sm: 1rem;
+	--space-md: calc(var(--space-sm)*2);
+
+	/*base color&font*/
+	background-color: var(--color-bg);
+	color: var(--color-font);
+
 }
 
 body{
 	font-family:'Courier New', Courier, monospace;
+	font-size: var(--font-md);
 	color: black;
-	background-color: antiquewhite;
+}
+
+h2{
+	text-align: center;
+	font-family:'Courier New', Courier, monospace;
+	font-weight:600;
+	font-size: calc(var(--font-sm)*6);
+	border-block: solid;
+	border-color: var(--color-font);
+	padding-block: var(--space-sm);
+	color: var(--color-font);
+	margin-block: var(--space-md);
+}
+
+h3{
+	font-weight: 600;
+	font-size: var(--font-md);
+	margin-block-start: var(--size-lg);
+	margin-block-end: var(--size-md);
+	border-block-end: calc(var(--size-sm) / 10) solid var(--color-font);
+}
+
+p{
+	margin: var(--space-md);
+}
+
+blockquote{
+	font-size: var(--font-lg);
+	font-style: italic;
+	font-weight: 500;
+	line-height: var(--size-md);
+	border-inline-start: calc(var(--size-sm) / 4) solid var(--color-point);
+	padding-inline-start: var(--size-md);
+	margin-block-end: var(--size-md);
+	color: var(--color-point);
+}
+
+.author{
+	font-size: var(--font-md);
+	font-weight: 100;
+	text-align: end;
+	color: var(--color-font);
+}
+
+.time{
+	text-align: center;
+}
+
+#reading{
+	color: var(--color-link);
+}
+
+#back-home{
+	font-size: var(--font-md);
+	margin-block-start: var(--size-lg);
+	margin-block-end: var(--size-md);
+	border-block-end: calc(var(--size-sm) / 10) solid var(--color-font);
+	position: sticky;
+	inset-block-start: 0;
+	padding-block: var(--size-md);
+	background-color: var(--color-bg);
+}
+
+#back-to-top{
+	display: block;
+	text-align: center;
+	font-weight: 500;
+	font-size: var(--font-md);
+	margin-block-start: var(--size-md);
+	color: var(--color-font);
 }
