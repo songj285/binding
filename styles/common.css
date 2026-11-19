@@ -1,5 +1,4 @@
 /*base styles*/
-/*base styles*/
 :root{
 	--base-type: 1rem;
 
@@ -10,7 +9,7 @@
 	--font-md: calc(var(--font-sm)*2);
 	--font-lg: calc(var(--font-sm)*3);
 
-	--color-bg: rgb(45, 44, 44);
+	--color-bg: rgb(11, 11, 11);
 	--color-font: white;
 	--color-point: rgb(28, 203, 28);
 
@@ -18,18 +17,23 @@
 	--space-md: calc(var(--space-sm)*2);
 	--space-lg: calc(var(--space-sm)*3);
 
-	/*base color&font*/
+	/*base color*/
 	background-color: var(--color-bg);
 	color: var(--color-font);
 
 }
 
 body{
-	max-inline-size: 70rem;
+	max-inline-size: 50rem;
 	margin: auto; /*makes it to center*/
+	padding-inline: var(--space-sm);
 
-		@media screen {
+		@media (width > 800px) {
+			max-inline-size: 60rem;
+		}
 
+		@media (width > 1280px) {
+			max-inline-size: 70rem;
 		}
 }
 
@@ -37,12 +41,18 @@ h1{
 	font-weight: 600;
 	font-family: 'Helvetica', serif;
 	text-align: center;
-	font-size: calc(var(--base-type)*4);
+	font-size: calc(var(--base-type)*5);
 	margin-block-start: var(--space-sm);
 }
 
+ol{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
 li{
-	text-align: center;
 	margin: var(--space-sm);
 	font-family: var(--font-title);
 	font-weight: 500;
@@ -51,6 +61,15 @@ li{
 	border-radius: 100%;
 	border-color: var(--color-font);
 	padding: var(--space-sm);
+}
+
+figure {
+	display: flex;
+	justify-content: center;
+
+	img {
+		inline-size: 58%;
+	}
 }
 
 .explanation{
