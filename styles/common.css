@@ -9,7 +9,7 @@
 	--font-md: calc(var(--font-sm)*2);
 	--font-lg: calc(var(--font-sm)*3);
 
-	--color-bg: rgb(11, 11, 11);
+	--color-bg: rgb(15, 15, 15);
 	--color-font: white;
 
 	--space-sm: 1rem;
@@ -25,14 +25,15 @@
 body{
 	max-inline-size: 50rem;
 	margin: auto; /*makes it to center*/
-	padding-inline: var(--space-sm);
 
 		@media (width >= 800px) {
 			max-inline-size: 60rem;
+			padding-inline: var(--space-md);
 		}
 
 		@media (width >= 1280px) {
 			max-inline-size: 70rem;
+			padding-inline: var(--space-lg);
 		}
 }
 
@@ -51,8 +52,7 @@ ol{
 	align-items: center;
 
 	@media (width >= 800px) {
-		display: flex;
-		flex-direction: row;
+
 		justify-content: center;
 		position: relative;
 		}
@@ -64,11 +64,10 @@ li{
 	font-family: var(--font-title);
 	font-weight: 600;
 	font-size: var(--font-sm);
-	color: var(--color-bg);
+	color: var(--color-font);
 	border: solid;
 	border-radius: 50%;
 	border-color: var(--color-font);
-	background-color: var(--color-font);
 	opacity: 80%;
 	padding: var(--space-sm);
 	flex-grow: 1;
@@ -88,6 +87,7 @@ figure {
 		display: flex;
 		justify-content: center;
 		padding-block: var(--space-md);
+		margin-block: calc(var(--space-sm)*-20);
 
 			>img {
 			inline-size: 90%;

@@ -7,7 +7,7 @@
 body{
 	font-family:var(--font-body);
 	color: var(--color-font);
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 }
 
 h2{
@@ -45,7 +45,7 @@ h3{
 p{
 	margin-block: var(--space-lg);
 	margin-inline: var(--space-sm);
-	line-height: 2.5rem;
+	line-height: var(--space-md);
 }
 
 ol{
