@@ -72,3 +72,7 @@ li{
 	padding: var(--space-md);
 	color: var(--color-bg);
 }
+
+#back-home{
+	margin-block-start: var(--space-md);
+}
