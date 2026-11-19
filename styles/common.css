@@ -95,10 +95,10 @@ figure {
 	}
 }
 
-svg{
+/*svg{
 	justify-content: center;
 	color: white;
-}
+}*/
 
 .explanation{
 	font-family: var(--font-title);
