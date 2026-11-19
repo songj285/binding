@@ -74,5 +74,14 @@ li{
 }
 
 #back-home{
-	margin-block-start: var(--space-md);
+	padding-block: var(--space-md);
+}
+
+#back-to-top{
+	display: block;
+	inline-size: max-content;
+	padding-inline: var(--space-sm);
+	position: fixed;
+	inset-block-end: var(--space-sm);
+	inset-inline-end: var(--space-sm);
 }
