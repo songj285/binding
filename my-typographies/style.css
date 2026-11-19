@@ -14,13 +14,19 @@ h2{
 	text-align: center;
 	font-family:var(--font-title);
 	font-weight:600;
-	font-size: calc(var(--font-sm)*5);
+	font-size: var(--font-md);
 	color: var(--color-point);
 	border: solid;
 	border-radius: 100%;
 	margin-block: var(--space-lg);
 	margin-inline-start: var(--space-sm);
 	padding-block: var(--space-lg);
+
+	@media (width >= 800px) {
+			font-size: calc(var(--font-sm)*5);
+
+		}
+
 }
 
 h3{
@@ -42,18 +48,23 @@ p{
 	line-height: 2.5rem;
 }
 
-ul{
+ol{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 li{
-	margin: var(--space-lg);
+	margin: var(--space-sm);
 	font-family: var(--font-title);
-	font-weight: 800;
-	font-size: var(--font-sm);
-	border: 0;
+	font-weight: 500;
+	font-size: 0.8rem;
+
+	@media (width >= 800px) {
+			font-size: var(--font-sm);
+			font-weight: 600;
+		}
+
 }
 
 .active{
@@ -68,8 +79,9 @@ li{
 	font-family: var(--font-title);
 }
 
-.time{
+.time, .author{
 	text-align: center;
+	font-size: var(--font-sm);
 }
 
 .epigraph{
@@ -82,7 +94,7 @@ li{
 	padding-block: var(--space-md);
 }
 
-#back-to-top{
+/* #back-to-top{
 	display: block;
 	inline-size: max-content;
 	padding-inline: var(--space-sm);

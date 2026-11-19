@@ -82,6 +82,16 @@ figure {
 
 	>img {
 		inline-size: 80%;
+		}
+
+	@media (width >= 800px) {
+		display: flex;
+		justify-content: center;
+		padding-block: var(--space-md);
+
+			>img {
+			inline-size: 90%;
+			}
 	}
 }
 
