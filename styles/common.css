@@ -11,7 +11,6 @@
 
 	--color-bg: rgb(11, 11, 11);
 	--color-font: white;
-	--color-point: rgb(95, 134, 225);
 
 	--space-sm: 1rem;
 	--space-md: calc(var(--space-sm)*2);

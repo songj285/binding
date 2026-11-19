@@ -1,3 +1,8 @@
+:root{
+
+	--color-point: rgb(249, 230, 167);
+
+}
 
 body{
 	font-family:var(--font-body);
