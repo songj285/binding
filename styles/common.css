@@ -41,14 +41,15 @@ h1{
 	font-weight: 600;
 	font-family: 'Helvetica', serif;
 	text-align: center;
+	justify-content: center;
 	font-size: calc(var(--base-type)*5);
-	margin-block-start: var(--space-sm);
+	padding-block: var(--space-lg);
 }
 
 ol{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 
 }
 
@@ -56,7 +57,7 @@ li{
 	margin: var(--space-sm);
 	font-family: var(--font-title);
 	font-weight: 500;
-	font-size: var(--font-md);
+	font-size: var(--font-sm);
 	border: solid;
 	border-radius: 100%;
 	border-color: var(--color-font);
@@ -66,9 +67,10 @@ li{
 figure {
 	display: flex;
 	justify-content: center;
+	padding-block: var(--space-md);
 
 	img {
-		inline-size: 58%;
+		inline-size: 80%;
 	}
 }
 
