@@ -1,29 +1,36 @@
 /*base styles*/
+/*base styles*/
 :root{
 	--base-type: 1rem;
 
-	--color-bg: rgb(210, 203, 191);
-	--color-font: black;
-	--color-base: white;
-
-	--font-body: 'Cardo', serif;
-	--font-title: 'Helvetica', serif;
+	--font-body:'Geist', 'Manrope', sans-serif;
+	--font-title: 'Space Grotesk', 'Syne', sans-serif;
 
 	--font-sm: 1rem;
-	--font-md: calc(var(--type-sm)*2);
-	--font-lg: calc(var(--type-sm)*3);
+	--font-md: calc(var(--font-sm)*2);
+	--font-lg: calc(var(--font-sm)*3);
 
-	--space-sm: 2rem;
+	--color-bg: rgb(45, 44, 44);
+	--color-font: white;
+	--color-point: rgb(28, 203, 28);
+
+	--space-sm: 1rem;
 	--space-md: calc(var(--space-sm)*2);
+	--space-lg: calc(var(--space-sm)*3);
 
 	/*base color&font*/
 	background-color: var(--color-bg);
 	color: var(--color-font);
+
 }
 
 body{
 	max-inline-size: 70rem;
 	margin: auto; /*makes it to center*/
+
+		@media screen {
+
+		}
 }
 
 h1{
@@ -38,8 +45,8 @@ li{
 	text-align: center;
 	margin: var(--space-sm);
 	font-family: var(--font-title);
-	font-weight: 800;
-	font-size: var(--font-lg);
+	font-weight: 500;
+	font-size: var(--font-md);
 	border: solid;
 	border-radius: 100%;
 	border-color: var(--color-font);
@@ -47,7 +54,8 @@ li{
 }
 
 .explanation{
-	font-family: 'Helvetica', serif;
+	font-family: var(--font-title);
+	text-align: center;
 	margin: var(--space-sm);
 	line-height: 1.5rem;
 	opacity: 60%;
