@@ -67,6 +67,45 @@ li{
 
 }
 
+.entry {
+	display: grid;
+	gap: var(--space-sm);
+
+	@media (width >= 800px) {
+		grid-template-columns: 1fr 2fr; /* left right */
+		column-gap: var(--space-lg); /* space inside the oval */
+		gap: var(--space-md);
+	}
+
+	>h3{
+		display: grid;
+		aspect-ratio: 2/1;
+		padding-inline: 15%;
+		border: solid var(--color-point);
+		border-radius: 50%;
+		text-align: center;
+		font-size: var(--font-sm);
+		overflow-wrap: anywhere;
+		max-inline-size: 18rem;
+		margin-inline: auto;
+		margin-block: 0;
+
+
+	@media (width >= 800px) {
+		grid-column: 1; /* In the first row*/
+		grid-row: 1;
+		}
+	}
+
+	>p{
+		@media (width >= 800px) {
+		grid-column: 2;/* In the second row*/
+		margin-block: 0;
+		}
+	}
+
+}
+
 .active{
 	color: var(--color-point);
 }
