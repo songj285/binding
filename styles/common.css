@@ -52,6 +52,32 @@ h1{
 
 }
 
+main{
+	display: grid;
+	gap: var(--space-md);
+
+	@media (width >= 800px) {
+		min-block-size: 100vh;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
+}
+
+h1{
+	font-weight: 600;
+	font-family: 'Helvetica', serif;
+	text-align: center;
+	justify-content: center;
+	font-size: var(--space-lg);
+	padding-block: var(--space-lg);
+	position: relative;
+
+	@media (width >= 800px) {
+		font-size: calc(var(--base-type)*5);
+		text-align: start;
+	}
+}
+
 ol{
 	display: grid;
 	align-items: center;
@@ -60,9 +86,7 @@ ol{
 
 	@media (width >= 800px) {
 
-		grid-template-columns: repeat(3,1fr);
-		position: relative;
-		margin-block-start: calc(var(--space-sm)*10);
+		margin-block-start: 0;
 		}
 
 }
@@ -78,7 +102,7 @@ li{
 	border-color: var(--color-font);
 	opacity: 80%;
 	padding-block: var(--space-sm);
-	flex-grow: 1;
+	padding-inline: var(--space-md);
 	text-align: center;
 }
 
@@ -94,13 +118,11 @@ figure {
 		}
 
 	@media (width >= 800px) {
-		display: flex;
-		justify-content: center;
 		padding-block: var(--space-md);
-		margin-block-start: calc(var(--space-sm)*-30);
+		margin-block-start: calc(var(--space-sm)*-52);
 
 			>img {
-			inline-size: 90%;
+			inline-size: 80%;
 			}
 	}
 }
@@ -120,6 +142,7 @@ figure {
 
 	@media (width >= 800px) {
 		font-size: var(--font-sm);
+		text-align: start;
 	}
 
 }
